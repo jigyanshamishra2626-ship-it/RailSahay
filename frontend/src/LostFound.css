@@ -1,0 +1,425 @@
+* {
+  box-sizing: border-box;
+}
+
+.lost-found-page {
+  min-height: 100vh;
+  background: #f1f5fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #172554;
+  padding-bottom: 40px;
+}
+
+.lost-found-navbar {
+  background: #ffffff;
+  padding: 16px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(15, 35, 75, 0.08);
+}
+
+.lost-found-navbar button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #dbe5f5;
+  background: #edf3ff;
+  color: #244a91;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.lost-found-navbar button:hover {
+  background: #dce8ff;
+  transform: translateY(-1px);
+}
+
+.lost-found-navbar h2 {
+  color: #142b57;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.lost-found-navbar h2 span {
+  color: #e58b24;
+}
+
+.lost-found-container {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.lost-found-banner {
+  background: linear-gradient(120deg, #102b60, #2457a6, #397bd1);
+  color: white;
+  padding: 35px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  box-shadow: 0 12px 28px rgba(30, 75, 145, 0.2);
+}
+
+.lost-found-banner svg {
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.15);
+  padding: 8px;
+  border-radius: 12px;
+  width: 58px;
+  height: 58px;
+}
+
+.lost-found-banner h1 {
+  margin: 0 0 9px;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.lost-found-banner p {
+  margin: 0;
+  line-height: 1.7;
+  color: #e5efff;
+  font-size: 15px;
+}
+
+.lost-found-form-card {
+  background: #ffffff;
+  margin-top: 25px;
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #e4ebf5;
+  box-shadow: 0 8px 30px rgba(20, 45, 85, 0.08);
+}
+
+.lost-found-form-card > h2 {
+  color: #142b57;
+  margin: 0 0 8px;
+  font-size: 25px;
+}
+
+.lost-found-form-card > p {
+  color: #718096;
+  margin: 0 0 22px;
+  font-size: 14px;
+}
+
+.lost-found-form-card h3 {
+  margin: 28px 0 18px;
+  color: #204d91;
+  font-size: 19px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e6edf7;
+}
+
+.lost-found-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0 28px;
+}
+
+.lost-found-option {
+  min-height: 58px;
+  padding: 15px;
+  border: 2px solid #dce5f2;
+  border-radius: 12px;
+  background: #f9fbff;
+  color: #294a7e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.lost-found-option:hover {
+  border-color: #4c79c4;
+  background: #f0f5ff;
+}
+
+.lost-found-option.active {
+  border-color: #2862b5;
+  background: #eaf2ff;
+  color: #174b9b;
+  box-shadow: 0 3px 12px rgba(40, 98, 181, 0.12);
+}
+
+.lost-found-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lost-found-details-form label {
+  display: block;
+  color: #263b5c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.lost-found-details-form input:not([type="file"]),
+.lost-found-details-form select,
+.lost-found-details-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1.5px solid #d8e1ef;
+  border-radius: 10px;
+  background: #fbfcff;
+  color: #233653;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.lost-found-details-form input:focus,
+.lost-found-details-form select:focus,
+.lost-found-details-form textarea:focus {
+  border-color: #3976cc;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(57, 118, 204, 0.12);
+}
+
+.lost-found-details-form textarea {
+  resize: vertical;
+  min-height: 105px;
+}
+
+.location-input-group {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.location-input-group input {
+  flex: 1;
+  min-width: 0;
+}
+
+.get-location-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2459a8;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.get-location-btn:hover {
+  background: #173f80;
+}
+
+.get-location-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gps-success {
+  color: #147342;
+  background: #eaf8f0;
+  border: 1px solid #c7ead5;
+  padding: 13px 15px;
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.voice-recording-section {
+  margin: 18px 0;
+  padding: 22px;
+  background: linear-gradient(135deg, #f0f5ff, #f8faff);
+  border: 1px solid #d9e5fa;
+  border-radius: 14px;
+}
+
+.voice-recording-section label {
+  display: block;
+  font-weight: 800;
+  color: #20477f;
+  margin: 0 0 7px;
+}
+
+.voice-recording-section p {
+  color: #718096;
+  font-size: 14px;
+  margin: 0 0 17px;
+}
+
+.voice-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.start-recording-btn,
+.stop-recording-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.start-recording-btn {
+  background: #2459a8;
+}
+
+.start-recording-btn:hover {
+  background: #173f80;
+}
+
+.stop-recording-btn {
+  background: #d93648;
+}
+
+.stop-recording-btn:hover {
+  background: #b92335;
+}
+
+.audio-preview {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audio-preview audio {
+  width: 100%;
+}
+
+.audio-preview button {
+  width: fit-content;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #d93648;
+  color: white;
+  cursor: pointer;
+}
+
+.lost-found-details-form input[type="file"] {
+  width: 100%;
+  padding: 13px;
+  background: #f7f9fd;
+  border: 1px dashed #9bb2d3;
+  border-radius: 10px;
+  color: #52647d;
+  cursor: pointer;
+}
+
+.selected-image-name {
+  color: #147342;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lost-found-submit-btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 16px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(110deg, #173f80, #3477cb);
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(36, 89, 168, 0.2);
+  transition: 0.2s;
+}
+
+.lost-found-submit-btn:hover {
+  background: linear-gradient(110deg, #102e62, #2459a8);
+  transform: translateY(-2px);
+}
+
+.lost-found-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.lost-found-success {
+  background: #e8f8ef;
+  color: #187443;
+  border: 1px solid #c6ead5;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.lost-found-error {
+  background: #fff0f0;
+  color: #b42318;
+  border: 1px solid #f5cccc;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .lost-found-container {
+    margin: 20px auto;
+    padding: 0 13px;
+  }
+
+  .lost-found-banner {
+    padding: 23px;
+    align-items: flex-start;
+  }
+
+  .lost-found-banner h1 {
+    font-size: 22px;
+  }
+
+  .lost-found-form-card {
+    padding: 21px;
+  }
+
+  .lost-found-options {
+    grid-template-columns: 1fr;
+  }
+
+  .location-input-group {
+    flex-direction: column;
+  }
+
+  .get-location-btn {
+    width: 100%;
+  }
+
+  .lost-found-navbar {
+    padding: 14px;
+  }
+
+  .lost-found-navbar h2 {
+    font-size: 21px;
+  }
+}

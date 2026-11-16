@@ -1,0 +1,152 @@
+.auth-page {
+  min-height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #edf4ff, #f8faff);
+  position: relative;
+}
+
+.back-home {
+  position: absolute;
+  top: 25px;
+  left: 6%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #155eef;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  border: 1px solid #e5ebf4;
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 20px 55px #1c3f7815;
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #155eef;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.auth-logo span span {
+  color: #155eef;
+}
+
+.auth-card h2 {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 25px;
+  color: #17243a;
+}
+
+.auth-card > p {
+  margin-top: 9px;
+  margin-bottom: 27px;
+  text-align: center;
+  color: #7b879a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.auth-field {
+  margin-bottom: 19px;
+}
+
+.auth-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #34435a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-field > div {
+  height: 49px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 13px;
+  border: 1px solid #dce4f0;
+  border-radius: 8px;
+  color: #8492a8;
+}
+
+.auth-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #17243a;
+  font-size: 13px;
+}
+
+.auth-submit {
+  width: 100%;
+  height: 49px;
+  margin-top: 7px;
+  border: none;
+  border-radius: 8px;
+  background: #155eef;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background: #104dcc;
+}
+
+.auth-switch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 24px;
+  color: #718097;
+  font-size: 13px;
+}
+
+.auth-switch button {
+  border: none;
+  background: transparent;
+  color: #155eef;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.auth-security {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f5;
+  color: #8492a8;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 27px 21px;
+  }
+
+  .back-home {
+    top: 15px;
+    left: 18px;
+  }
+}

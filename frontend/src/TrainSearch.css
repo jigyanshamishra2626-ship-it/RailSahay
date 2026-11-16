@@ -1,0 +1,285 @@
+.train-page {
+  min-height: 100vh;
+  background: #f3f7fc;
+  color: #172b4d;
+  font-family: Arial, sans-serif;
+}
+
+.train-nav {
+  background: #102b50;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.train-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.train-brand span span {
+  color: #55c5ff;
+}
+
+.train-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 17px;
+  border: 1px solid #7891b2;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.train-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 55px 22px;
+}
+
+.train-hero {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.train-tag {
+  color: #1684c7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.train-hero h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 15px 0;
+  color: #102b50;
+}
+
+.train-hero h1 span {
+  color: #168ed0;
+}
+
+.train-hero p {
+  color: #718096;
+  font-size: 16px;
+}
+
+.train-search-box {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(20, 55, 90, 0.09);
+}
+
+.train-search-box h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 25px;
+  color: #102b50;
+}
+
+.train-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.train-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #40536b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.train-fields input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #d7e1ed;
+  border-radius: 9px;
+  outline: none;
+  font-size: 14px;
+  background: #fbfdff;
+}
+
+.train-fields input:focus {
+  border-color: #168ed0;
+  box-shadow: 0 0 0 3px rgba(22, 142, 208, 0.12);
+}
+
+.train-search-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #147fbd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.train-search-btn:hover {
+  background: #102b50;
+  transform: translateY(-2px);
+}
+
+.train-search-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.train-results {
+  margin-top: 35px;
+}
+
+.train-results h2 {
+  color: #102b50;
+  margin-bottom: 20px;
+}
+
+.train-result-card {
+  background: white;
+  padding: 23px;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  border: 1px solid #e1eaf3;
+  box-shadow: 0 5px 20px rgba(20, 55, 90, 0.06);
+}
+
+.train-result-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.train-result-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e7f4ff;
+  color: #1684c7;
+  display: grid;
+  place-items: center;
+}
+
+.train-result-heading h3 {
+  margin: 0 0 6px;
+  color: #102b50;
+}
+
+.train-result-heading span {
+  color: #718096;
+  font-size: 13px;
+}
+
+.train-route {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 25px 5px;
+}
+
+.train-route strong {
+  font-size: 23px;
+  color: #102b50;
+}
+
+.train-route p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #718096;
+  font-size: 13px;
+}
+
+.train-route-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #168ed0;
+}
+
+.train-route-line span {
+  width: 55%;
+  border-top: 2px dashed #8cbfdf;
+}
+
+.train-result-footer {
+  border-top: 1px solid #edf1f6;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: #718096;
+  font-size: 12px;
+}
+
+.train-result-footer span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.train-empty,
+.train-error {
+  text-align: center;
+  padding: 20px;
+  color: #718096;
+}
+
+.train-error {
+  color: #d33;
+}
+
+.train-footer {
+  text-align: center;
+  background: #102b50;
+  color: #d5e4f5;
+  padding: 22px;
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .train-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .train-search-box {
+    padding: 20px;
+  }
+
+  .train-route strong {
+    font-size: 17px;
+  }
+
+  .train-result-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .train-nav {
+    padding: 15px;
+  }
+
+  .train-brand {
+    font-size: 20px;
+  }
+}

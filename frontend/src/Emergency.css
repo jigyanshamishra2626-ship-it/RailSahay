@@ -1,0 +1,393 @@
+.emergency-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.emergency-navbar {
+  height: 72px;
+  background: white;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.emergency-navbar h2 {
+  color: #153d75;
+}
+
+.emergency-navbar h2 span {
+  color: #f28c28;
+}
+
+.emergency-navbar button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #2876c7;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.emergency-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.emergency-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(120deg, #b42332, #e34c59);
+  color: white;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+.emergency-banner h1 {
+  margin: 0 0 10px;
+  font-size: 27px;
+}
+
+.emergency-banner p {
+  margin: 0;
+  color: #ffe9e9;
+  line-height: 1.5;
+}
+
+.emergency-form-card,
+.emergency-history {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+  margin-bottom: 25px;
+}
+
+.emergency-form-card h2,
+.emergency-history h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.emergency-subtitle {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.emergency-form-card form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0 9px;
+}
+
+.emergency-type-options {
+  display: flex;
+  gap: 15px;
+}
+
+.type-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  padding: 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.type-option.active {
+  background: #fff0f0;
+  border: 1px solid #dc3545;
+  color: #c62828;
+}
+
+.emergency-form-card input,
+.emergency-form-card textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.emergency-form-card input:focus,
+.emergency-form-card textarea:focus {
+  border-color: #2876c7;
+}
+
+.emergency-form-card textarea {
+  resize: vertical;
+}
+
+.emergency-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.emergency-row label {
+  margin-top: 20px;
+}
+
+.submit-emergency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #d63031;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-emergency:hover {
+  background: #b42332;
+}
+
+.submit-emergency:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.emergency-success {
+  padding: 13px;
+  background: #e5f8ed;
+  color: #16834b;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.emergency-error {
+  padding: 13px;
+  background: #fff0f0;
+  color: #c62828;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.no-requests {
+  color: #718096;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.request-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 18px;
+  border: 1px solid #e9edf4;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.request-card strong {
+  font-size: 16px;
+}
+
+.request-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.request-card span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #718096;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.request-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #fff4d6;
+  color: #9a6700;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .emergency-navbar {
+    padding: 0 15px;
+  }
+
+  .emergency-container {
+    padding: 20px 13px;
+  }
+
+  .emergency-banner {
+    padding: 22px;
+    align-items: flex-start;
+  }
+
+  .emergency-banner h1 {
+    font-size: 21px;
+  }
+
+  .emergency-form-card,
+  .emergency-history {
+    padding: 20px;
+  }
+
+  .emergency-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .request-card {
+    flex-direction: column;
+  }
+}
+.location-input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.location-input-group input {
+  flex: 1;
+  min-width: 0;
+}
+
+.get-location-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 16px;
+  background: #e8f2ff;
+  color: #1765b1;
+  border: 1px solid #b8d7fa;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.get-location-btn:hover {
+  background: #d6e9ff;
+}
+
+.get-location-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gps-success {
+  color: #16834b;
+  background: #e5f8ed;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .location-input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .get-location-btn {
+    width: 100%;
+  }
+}
+/* Voice Recording Section */
+.voice-recording-section {
+  margin-top: 22px;
+  padding: 18px;
+  background: #f8faff;
+  border: 1px solid #dce8f5;
+  border-radius: 10px;
+}
+
+.voice-recording-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #26364a;
+}
+
+.voice-recording-section p {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.voice-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.start-recording-btn,
+.stop-recording-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.start-recording-btn {
+  background: #1765b1;
+}
+
+.stop-recording-btn {
+  background: #dc3545;
+}
+
+.audio-preview {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audio-preview audio {
+  width: 100%;
+}
+
+.audio-preview button {
+  align-self: flex-start;
+  padding: 9px 14px;
+  background: #fff0f0;
+  color: #c62828;
+  border: 1px solid #ffcaca;
+  border-radius: 7px;
+  cursor: pointer;
+}
